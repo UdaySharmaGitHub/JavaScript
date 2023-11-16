@@ -1,14 +1,19 @@
-let changeArea = document.getElementById("changeArea");
-let changeText = document.getElementById("changeText");
-let changeBtn = document.getElementById("changeBtn").addEventListener("click",changingText);
-let resetTextBtn = document.getElementById("resetBtn").addEventListener("click",resetingText);
+// let changeArea = document.getElementById("changeArea");
+// let changeText = document.getElementById("changeText");
+// let changeBtn = document.getElementById("changeBtn").addEventListener("click",changingText);
+// let resetTextBtn = document.getElementById("resetBtn").addEventListener("click",resetingText);
 
-changeArea.style.background = "red";
-changeText.style.background = "green";
-changeBtn.style.backgroundColor = "cyan";
-function changingText(){
-     changeArea.innerHTML = "Hi How are you" ;
+// changeArea.style.background = "red";
+// changeText.style.background = "green";
+// changeBtn.style.backgroundColor = "cyan";
+// function changingText(){
+//      changeArea.innerHTML = "Hi How are you" ;
+// }
+// function resetingText(){
+//     changeArea.innerHTML ="Enter Text";
+// }
+var car = {
+    milage:200
 }
-function resetingText(){
-    changeArea.innerHTML ="Enter Text";
-}
+var carMilage =100;
+console.log(car.milage);
