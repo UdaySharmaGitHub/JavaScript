@@ -1,12 +1,15 @@
-// Reject in promises
+// Resolve in promises when job is successful
 let promise = new Promise(function(resolve, reject) {
     // the function is executed automatically when the promise is constructed
     // after 1 second signal that the job is done with the result "done"
     console.log("promises in resoleve-1")
+    resolve(100);
     setTimeout(() => resolve("done"), 1000);
     console.log("promises in resoleve-2")
   });
-// Reject in promises
+console.log(promise);
+
+// Reject in promises - if the job is fail
   let promise2 = new Promise(function(resolve, reject) {
     // after 5 second signal that the job is finished with an error
     setTimeout(() => reject(new Error("Whoops!")), 5000);

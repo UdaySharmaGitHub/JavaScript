@@ -30,7 +30,7 @@ function loadScript(src,callback) {
   script.src = src;
   script.onload = function() {
     console.log("Loaded script with SRC: " + src)
-    callback();   // callback the method
+    callback();   // callback the method with no argument
   }
   document.body.appendChild(script);
 }
